@@ -80,7 +80,7 @@ var deferred = $.Deferred();
                 }
             },
             function () {
-                console.log(Error retrieving Screen Info");
+                console.log("Error retrieving Screen Info");
                 deferred.resolve("smartphone");
             });
     }
