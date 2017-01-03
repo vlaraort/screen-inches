@@ -1,0 +1,27 @@
+{
+  "name": "screen-inches",
+  "version": "1.0.1",
+  "description": "Cordova plugin for screen measuring",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlaraort/about-screen.git"
+  },
+  "keywords": [
+    "cordova",
+    "inches",
+    "screen",
+    "measuring",
+    "size",
+    "plugin"
+  ],
+  "author": "Victor Lara <victorlara@outlook.com> (https://idonthaveawebsite.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlaraort/about-screen/issues"
+  },
+  "homepage": "https://github.com/vlaraort/about-screen#readme"
+}
