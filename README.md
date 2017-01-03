@@ -8,15 +8,15 @@ With this plugin you shoud be able to get:
   screen diagonal screen size (in inches),
   screen resolution PPI (also known as DPI)
   
- ## Values ##
- ======
+## Values ##
+ 
  width
  
  height
  
  screenDiagonal
  
- ### Code ###
+### Code ###
  ```javascript
  window.plugins.aboutScreen.getInfo(
     function (e) {
@@ -28,7 +28,7 @@ With this plugin you shoud be able to get:
  )
 ```
  
- ## Usage ##
+## Usage ##
 
  Make yourself a function like this, and edit the MAX_INCHES_TEST_USER_AGENT variable to set the limit between tablet and mobile, the function will return a string in a promise with the value "tablet" or "smartphone" 
  ```javascript
