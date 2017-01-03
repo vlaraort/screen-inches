@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.vlara.aboutscreen" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>AboutScreen</name>
+	<author>Víctor Lara</author>
+    <description>
+        This plugin allows you get information related to device screen.
+        You shoud be able to get: Screen width, screen height, screen diagonal screen size (in inches), screen resolution PPI (also known as DPI)
+        Android is fully supported, iOS will be added soon.
+    </description>
+
+    <keywords>Screen, Android, Resolution, Diagonal, Size</keywords>
+
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+
+    <js-module name="AboutScreen" src="www/AboutScreen.js">
+        <clobbers target="window.plugins.aboutScreen" />
+    </js-module>
+
+    <!-- Android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AboutScreen">
+                <param name="android-package" value="com.efl.aboutscreen.AboutScreen" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*"></config-file>
+
+        <source-file src="src/android/AboutScreen.java" target-dir="src/com/efl/aboutscreen" />
+    </platform>
+   
+   <platform name="ios">
+      <config-file target="config.xml" parent="/*">
+         <feature name="AboutScreen">
+            <param name="ios-package" value="AboutScreen" />
+         </feature>
+      </config-file>
+      
+      <header-file src="src/ios/AboutScreen.h" />
+      <source-file src="src/ios/AboutScreen.m" />
+   </platform>
+</plugin>
