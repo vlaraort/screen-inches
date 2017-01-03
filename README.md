@@ -1,4 +1,4 @@
-# About screen #
+# Screen Inches #
 
 Very simple Cordova plugin, used to get information related to device screen.
 
@@ -8,6 +8,14 @@ With this plugin you shoud be able to get:
   screen diagonal screen size (in inches),
   screen resolution PPI (also known as DPI)
   
+## Installation ##
+You can install screen inches plugin with Cordova CLI, from npm:
+
+```
+$ cordova plugin add screen-inches
+$ cordova prepare
+```
+
 ## Values ##
  
  width
